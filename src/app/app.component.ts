@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Hello, world!';
+  title = 'My Best Practice With Angular & Kendo UI';
 
   onButtonClick(): void {
     this.title = "Hello from Kendo UI!";
