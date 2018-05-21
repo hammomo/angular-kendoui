@@ -8,6 +8,7 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { GridComponent } from './grid/grid.component';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { AppRoutingModule } from './/app-routing.module';
+import { CategoriesSevice } from './northwind.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { AppRoutingModule } from './/app-routing.module';
     GridModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CategoriesSevice],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
