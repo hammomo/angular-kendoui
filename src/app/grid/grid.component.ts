@@ -48,7 +48,7 @@ export class GridComponent implements OnInit {
 
     if(!formGroup.valid) {
       args.preventDefault();
-    } else if (!formGroup.dirty) {
+    } else if (formGroup.dirty) {
       this.editService.assignValues(dataItem, formGroup.value);
       this.editService.update(dataItem);
     }
